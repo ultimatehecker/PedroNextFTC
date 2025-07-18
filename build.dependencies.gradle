@@ -3,6 +3,7 @@ repositories {
     mavenLocal()
     google()
 
+    maven { url = "https://maven.rowanmcalpin.com/" }
     maven { url= "https://maven.pedropathing.com/" }
     maven { url = "https://mymaven.bylazar.com/releases" }
 }
@@ -25,6 +26,9 @@ dependencies {
     implementation('com.pedropathing:ftc:1.1.0-SNAPSHOT') {
         changing = true
     }
+
+    implementation 'com.rowanmcalpin.nextftc:core:0.6.2'
+    implementation 'com.rowanmcalpin.nextftc:ftc:0.6.2'
 
     implementation 'com.pedropathing:telemetry:0.0.6'
     implementation 'com.bylazar:ftcontrol:0.6.8'
